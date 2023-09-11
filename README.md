@@ -25,15 +25,13 @@ Each observation consists of a single interaction between a user and a song.
       - the regularization parameter.
 
 ### Evaluation
+In assessing both our models - Baseline popularity based model
+and the ALS- Latent Factor Model, we utilize two key metrics: pre-
+cision and Mean Average Precision (MAP). Precision is used to
+calculate the ratio of pertinent instances within the instances that
+have been retrieved, while ’Precision at k’ quantifies the accuracy
+of the model’s predictions within the top ’k’ user recommendations.
 
-Once you are able to make predictions—either from the popularity baseline or the latent factor model—you will need to evaluate accuracy on the validation and test data.
-Scores for validation and test are reported in the write-up.
-Evaluations should be based on predictions of the top 100 items for each user, and report the ranking metrics provided by spark.
-Refer to the [ranking metrics](https://spark.apache.org/docs/3.0.1/mllib-evaluation-metrics.html#ranking-systems) section of the Spark documentation for more details.
-
-The choice of evaluation criteria for hyper-parameter tuning is up to you, as is the range of hyper-parameters you consider, but be sure to document your choices in the final report.
-As a general rule, you should explore ranges of each hyper-parameter that are sufficiently large to produce observable differences in your evaluation score on the validation data.
-If your selection is picking the largest or smallest setting of a hyper-parameter from your range, this probably means your range isn't large enough.
 
 ### Documentation
 
